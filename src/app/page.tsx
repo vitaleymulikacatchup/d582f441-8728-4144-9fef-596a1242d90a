@@ -9,7 +9,7 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Check, Flame, KnifeFork, Salad } from "lucide-react";
+import { Check, Flame, Salad } from "lucide-react";
 
 const assetMap = [
   {"id":"hero-steak","url":"https://images.pexels.com/photos/10749578/pexels-photo-10749578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","alt":"Delicious grilled steak served with rosemary, garlic, and spices on a stone slab, perfect for a gourmet meal."},
@@ -29,7 +29,7 @@ export default function Page() {
         <NavbarLayoutFloatingOverlay 
           navItems={[
             { name: "About us", id: "about" },
-            { name: "Menu", id: "products" },
+            { name: "Menu", id: "product" },
             { name: "Chefs", id: "team" },
             { name: "Reservations", id: "contact" }
           ]}
@@ -68,7 +68,7 @@ export default function Page() {
             title="Our Menu Highlights"
             description="Explore our curated selection of dishes."
             features={[
-              { title: "Signature Steak", description: "Our most popular choice for meat lovers.", icon: KnifeFork },
+              { title: "Signature Steak", description: "Our most popular choice for meat lovers.", icon: Salad },
               { title: "New Sides", description: "Delight in our range of gourmet sides.", icon: Salad }
             ]}
           />
